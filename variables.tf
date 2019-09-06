@@ -27,6 +27,12 @@ variable "security_groups" {
   description = "Security Group IDs"
 }
 
+variable "associate_security_group_ids" {
+  type = list(string)
+  default = []
+  description = "Associate security group ids"
+}
+
 variable "vpc_id" {
   type        = string
   description = "VPC ID"
